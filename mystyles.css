@@ -1,0 +1,94 @@
+/* for sign-in and log in */
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    font-family: sans-serif;
+}
+.min{
+width: 600px;
+height: 400px;
+background-color:lightskyblue;
+overflow:hidden;
+border-radius: 20px;
+box-shadow: #000;
+}
+ #chk{
+    display:flex;
+ }
+ .signup{
+    position: relative;
+    width:200px;
+    height: 200px;
+     }
+ .label{
+    color: blueviolet;
+    font-size: 32px;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 5s ease-in-out;
+    margin-top: 10px;
+     }
+.input{
+    width: 60px;
+    height:40px ;
+    background: white;
+    justify-content: center;
+    display: flex;
+    margin: 30px auto;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+.bottom{
+    width: 60px;
+    height: 50px;
+    margin: 14px auto;
+    justify-content: center;
+    display: flex;
+    color: beige;
+    background: blue;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    outline:none ;
+    border: none;
+    border-radius: 14px;
+    transition: 3s ease-in;
+    cursor: pointer;
+    box-shadow: 5px 20px 40px black;
+}
+.bottom:hover{
+    background: blue;
+}
+.login{
+    height: 400px;
+    background: white;
+    border-radius: 60% / 30%;
+    transform: translateY(-180px);
+    transition: 8s ease-in-out ;
+}
+.login .label{
+    color: blueviolet;
+    transform: scale(-6);
+}
+.login p{
+    text-align: center;
+    padding: 20px;
+}
+#chk:checked .login{
+transform: translateY(-500px);
+}
+#chk:checked .login label{
+    transform: scale(1);
+}
+#chk:checked .signup label{
+    transform: scale(.6);
+}
