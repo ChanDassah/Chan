@@ -1,94 +1,67 @@
-/* for sign-in and log in */
-body{
-    margin: 0px;
-    padding: 0px;
-    display: flex;
+body {
+    background-color: #166151; 
+    font-family: sans-serif;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
-    min-height:100vh;
-    font-family: sans-serif;
+    height: 100vh;
 }
-.min{
-width: 600px;
-height: 400px;
-background-color:lightskyblue;
-overflow:hidden;
-border-radius: 20px;
-box-shadow: #000;
+
+img{
+    height: 20vh;
 }
- #chk{
-    display:flex;
- }
- .signup{
-    position: relative;
-    width:200px;
-    height: 200px;
-     }
- .label{
-    color: blueviolet;
-    font-size: 32px;
-    justify-content: center;
+   .bio-con{
     display: flex;
-    margin: 60px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 5s ease-in-out;
-    margin-top: 10px;
-     }
-.input{
-    width: 60px;
-    height:40px ;
-    background: white;
-    justify-content: center;
-    display: flex;
-    margin: 30px auto;
+    align-items:center ;
+    gap: 22px;
+    width: 600px;
+    background-color: #b72525;
     padding: 20px;
-    border: none;
-    outline: none;
-    border-radius: 50px;
-}
-.bottom{
-    width: 60px;
-    height: 50px;
-    margin: 14px auto;
-    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 9px 4px 8px solid black;
+   }
+
+   .main-nav{
     display: flex;
-    color: beige;
-    background: blue;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 20px;
-    outline:none ;
-    border: none;
-    border-radius: 14px;
-    transition: 3s ease-in;
-    cursor: pointer;
-    box-shadow: 5px 20px 40px black;
+    gap: 20px;
+    list-style-type: none;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    
+    
+   }
+  .main-nav li{
+    color: aliceblue;
+    
 }
-.bottom:hover{
-    background: blue;
+
+@media (max-width: 600px) {
+    .bio-con{
+        flex-direction: column;
+    }
+    .main-nav{
+        flex-direction: column;
+       align-items: center;
+       padding: 0;
+    }
+    .main-nav li{
+        width: 100%;
+        text-align:center;
+        padding: 10px 0;
+    }
 }
-.login{
-    height: 400px;
-    background: white;
-    border-radius: 60% / 30%;
-    transform: translateY(-180px);
-    transition: 8s ease-in-out ;
+/* The Lamp (starts dark) */
+.light-off {
+    width: 100px;
+    height: 100px;
+    background-color: #444; /* Dark Grey */
+    border-radius: 50%;     /* Makes it a circle */
+    border: 3px solid #555;
 }
-.login .label{
-    color: blueviolet;
-    transform: scale(-6);
-}
-.login p{
-    text-align: center;
-    padding: 20px;
-}
-#chk:checked .login{
-transform: translateY(-500px);
-}
-#chk:checked .login label{
-    transform: scale(1);
-}
-#chk:checked .signup label{
-    transform: scale(.6);
+
+/* The Light (when on) */
+.light-on {
+    background-color: #f7d96e; /* Yellow */
+    box-shadow: 0 0 20px #f7d96e; /* Glow effect */
 }
